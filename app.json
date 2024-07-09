@@ -1,0 +1,26 @@
+{
+  "name": "nocodb",
+  "description": "Build Databases As Spreadsheets : No-Coding Required",
+  "logo": "https://nocodb.com/brand/favicon-64.png",
+  "keywords": [
+    "nocodb"
+  ],
+  "success_url": "/dashboard",
+  "website": "https://nocodb.com",
+  "repository": "https://github.com/nocodb/nocodb-seed-heroku",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "stack": "container",
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ],
+  "env": {
+    "NC_ONE_CLICK": "true",
+    "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+  }
+}
